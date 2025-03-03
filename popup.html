@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Manipulation</title>
+    <style>
+        body {
+            width: 250px;
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        div {
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label>
+            <input type="checkbox" id="invertPage">
+            Invert Page
+        </label>
+    </div>
+    <div>
+        <label>
+            <input type="checkbox" id="invertImages" checked>
+            Don't Invert Images
+        </label>
+    </div>
+    <div>
+        <label>
+            <input type="checkbox" id="invertVideos" checked>
+            Don't Invert Videos
+        </label>
+    </div>
+    <div>
+        <label>
+            <input type="checkbox" id="grayscalePage">
+            Grayscale Page
+        </label>
+    </div>
+    <div>
+        <label>
+            <input type="checkbox" id="grayscaleImages">
+            Grayscale Images
+        </label>
+    </div>
+    <div>
+        <label>
+            <input type="checkbox" id="grayscaleVideos">
+            Grayscale Videos
+        </label>
+    </div>
+    <div>
+        <label for="hue">Hue (<span id="hueValue">180</span>°)</label>
+        <input type="range" id="hue" min="0" max="360" value="180">
+    </div>
+    <button id="apply">Apply</button>
+    <button id="reset">Reset</button>
+    <script src="popup.js"></script>
+</body>
+</html>

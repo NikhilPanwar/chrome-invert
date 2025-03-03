@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Color Inverter",
+    "version": "1.0",
+    "description": "Invert colors of the webpage to make it easy to read.",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
